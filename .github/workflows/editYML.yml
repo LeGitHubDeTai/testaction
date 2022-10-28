@@ -15,3 +15,4 @@ jobs:
         elementSTR: "['files'][0]['url']"
         replace: "-"
         replaceFor: "."
+
