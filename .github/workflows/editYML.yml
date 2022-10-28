@@ -1,0 +1,16 @@
+name: Edit Files
+
+on: push
+    
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Edit Files
+      uses: TaiStudio/action-edit-YML@main
+      with:
+        type: 'single'
+        files: "./dist/lastest.yml"
+        elementSTR: "['files'][0]['url']"
+        replace: "-"
+        replaceFor: "."
